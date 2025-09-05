@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <!-- ===== SEO ===== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>سامانه بومی CMS | شرکت فناوری اطلاعات آریانیک</title>
+  
+  <meta name="description"
+    content="طراحی پورتال سازمانی و ارائه خدمات طراحی سایت و سئو ، سامانه بومی و امن مدیریت محتوا (CMS) با رابط فارسی، تجربه کاربری مدرن و پشتیبانی ۲۴/۷. مناسب سازمان‌ها و نهادها." />
+  <link rel="canonical" href="https://aryanic.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="سامانه بومی CMS | شرکت آریانیک">
+  <meta property="og:description" content="CMS بومی، امن و مقیاس‌پذیر با پشتیبانی فارسی.">
+  <meta property="og:url" content="https://aryanic.com">
+  <meta property="og:image" content="img/CMS.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="سامانه بومی CMS | شرکت آریانیک">
+  <meta name="twitter:description" content="CMS بومی، امن و مقیاس‌پذیر با پشتیبانی فارسی.">
+  <meta name="twitter:image" content="img/CMS.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <!--<link rel="manifest" href="img/site.webmanifest" />-->
+  <meta name="msapplication-TileColor" content="#0664b7">
+  <meta name="theme-color" content="#0664b7">
+
+  <!-- Bootstrap 5 (logical start/end works with dir=rtl) -->
+  <link href="libraries/bootstrap.min.css" rel="stylesheet">
+  <link href="libraries/bootstrap-icons.css" rel="stylesheet">
+  <script src="libraries/bootstrap.bundle.min.js" defer></script>
+
+  <!-- font awesome css -->
+   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/fontAwesome-Pro-5.12.0/min/all.min.css"/>
+
+    <!-- load JQuey -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+  <!-- theme custom css -->
+  <link href="css/custom.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="libraries/remixicon.css" rel="stylesheet">
+  <!-- AOS & Swiper -->
+  <link rel="stylesheet" href="libraries/swiper-bundle.min.css" />
+  <link href="libraries/aos.css" rel="stylesheet">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"شرکت طراحی و مهندسی نرم‌افزار","url":"https://aryanic.com","logo":"https://aryanic.comstatic/logo.png"}
+  </script>
+</head>
+
+<body class="bg-light text-dark">
+  <a href="#main" class="visually-hidden-focusable position-fixed top-0 end-0 m-3 btn btn-primary btn-sm">پرش به
+    محتوا</a>
+
+  <!-- نوار اعلان -->
+  <div class="bg-brand text-white small">
+    <div class="container container-custom d-flex align-items-center justify-content-between py-2">
+      <p class="mb-0 typewriter">🎉 نسخه جدید CMS با ویرایشگر بلوکی و امنیت تقویت‌شده منتشر شد.</p>
+      <a href="#announcements" class="text-white text-decoration-underline">جزئیات</a>
+    </div>
+  </div>
+
+  <!-- هدر / ناوبری -->
+  <!doctype html>
+  <html lang="fa" dir="rtl">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ناوبری آریانیک</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      /* پایه */
+      .navbar {
+        font-weight: 500;
+      }
+
+      .navbar .nav-link {
+        padding: .6rem .9rem;
+      }
+
+      /* --- مگا منو محصولات --- */
+      .mega-dropdown {
+        position: static;
+      }
+
+      /* لازم برای پهنای تمام-ردیف */
+      .mega-dropdown .dropdown-menu {
+        width: 100%;
+        border: 0;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+      }
+
+      .mega-menu h6 {
+        font-size: .95rem;
+        margin-bottom: .75rem;
+        display: flex;
+        align-items: center;
+        gap: .4rem;
+        color: #0d6efd;
+      }
+
+      /* --- زیرمنوهای چندسطحی (آبشاری) --- */
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      /* در دسکتاپ: منوهای تو در تو به سمت چپ باز شوند (برای RTL) */
+      @media (min-width: 992px) {
+        .dropdown-submenu>.dropdown-menu {
+          position: absolute;
+          top: 0;
+          right: 100%;
+          margin-top: -.25rem;
+          margin-right: .25rem;
+        }
+      }
+
+      /* در موبایل: منوها پله‌ای زیر هم بیایند */
+      @media (max-width: 991.98px) {
+        .dropdown-menu {
+          position: static !important;
+          float: none;
+        }
+
+        .dropdown-submenu>.dropdown-menu {
+          margin: .25rem 0 .25rem 0;
+        }
+      }
+
+      /* دکمه پرداخت */
+      .btn-pay {
+        background: var(--bs-teal);
+        color: #fff !important;
+        padding: .35rem .7rem;
+        border-radius: .5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="img/AryanicLogo.png" alt="لوگو" class="h-10" data-keep>
+          <span class="d-none d-sm-inline fw-bold text-brand">شرکت فناوری اطلاعات آریانیک</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="نمایش منو">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+
+            <!-- خانه -->
+            <li class="nav-item">
+              <a class="nav-link" href="https://web.archive.org/web/20250126093931/https://aryanic.com/">خانه</a>
+            </li>
+
+            <!-- محصولات : مگا منو سه ستونه -->
+            <li class="nav-item dropdown mega-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                محصولات
+              </a>
+              <div class="dropdown-menu p-4 mega-menu">
+                <div class="row g-4">
+                  <!-- ستون 1: پورتال سازمانی -->
+                  <div class="col-12 col-lg-4">
+                    <h6><i class="bi bi-buildings"></i> پورتال سازمانی آریانیک</h6>
+                    <div class="list-group list-group-flush">
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/portal">پورتال سازمانی آریانیک</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/portal-changes">تازه ها</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/portal-packages">لیست قیمت و امکانات پکیج
+                        ها</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/portal-help">کتاب های راهنما و فیلم های
+                        آموزشی</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/samples">مشتریان</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/portal-representation">نمایندگی</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/uploads/contractportal.pdf">تیپ قرارداد فروش نرم
+                        افزار پورتال</a>
+                    </div>
+                  </div>
+
+                  <!-- ستون 2: CMS -->
+                  <div class="col-12 col-lg-4">
+                    <h6><i class="bi bi-journal-text"></i> سیستم تولید و مدیریت محتوا (CMS)</h6>
+                    <div class="list-group list-group-flush">
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/cms-info">معرفی</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/cms-changes">تازه ها</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/cms-packages">لیست قیمت و امکانات پکیج ها</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/guaranty-card">کارت گارانتی</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/cms-help">کتاب های راهنما و فیلم های
+                        آموزشی</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/samples">مشتریان</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/cms-representation">نمایندگی</a>
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/uploads/contractcms.pdf">تیپ قرارداد فروش نرم
+                        افزار CMS</a>
+                    </div>
+                  </div>
+
+                  <!-- ستون 3: سایر -->
+                  <div class="col-12 col-lg-4">
+                    <h6><i class="bi bi-gear"></i> سایر</h6>
+                    <div class="list-group list-group-flush">
+                      <a class="list-group-item list-group-item-action"
+                        href="/web/20250126093931/https://aryanic.com/page/custom-system">تولید سامانه سفارشی</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- پشتیبانی و خدمات : آبشاری چندسطحی -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                data-bs-auto-close="outside">پشتیبانی و خدمات</a>
+              <ul class="dropdown-menu">
+
+                <!-- قراردادهای پشتیبانی -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    قراردادهای پشتیبانی
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"
+                        href="/web/20250126093931/https://aryanic.com/page/portal-support">پشتیبانی پورتال</a></li>
+
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside">
+                        پشتیبانی CMS
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                            href="/web/20250126093931/https://aryanic.com/page/cms-support-gov">CMS دولتی</a></li>
+                        <li><a class="dropdown-item"
+                            href="/web/20250126093931/https://aryanic.com/page/cms-support-prv">CMS خصوصی</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item"
+                    href="/web/20250126093931/https://aryanic.com/uploads/software-contract-type_976.pdf">تیپ قرارداد
+                    پشتیبانی نرم افزار</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/guaranty-card">کارت
+                    گارانتی</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/support-diffrence">تفاوت
+                    کارت گارانتی با قرارداد پشتیبانی</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/seo">خدمات سئو</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/web-design">طراحی
+                    قالب(UX/UI)</a></li>
+
+                <!-- میزبانی وب -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">میزبانی وب</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside">سرور</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                            href="/web/20250126093931/https://aryanic.com/page/dedicated-server">سرور اختصاصی</a></li>
+                        <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/vps">سرور
+                            مجازی</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/host-windows">ویندوز
+                        2019</a></li>
+                  </ul>
+                </li>
+
+                <!-- دامنه -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">دامنه</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"
+                        href="/web/20250126093931/https://aryanic.com/page/domain-info">معرفی</a></li>
+                    <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/domain-price">تعرفه
+                        ها</a></li>
+                    <li><a class="dropdown-item"
+                        href="/web/20250126093931/https://aryanic.com/page/domain-help">راهنما</a></li>
+                    <li><a class="dropdown-item"
+                        href="/web/20250126093931/https://aryanic.com/page/domain-extentions">پسوند ها</a></li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/sla">توافقنامه سطح خدمات
+                    (SLA)</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/website-create">طراحی
+                    سایت</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/custom-system">تولید
+                    سامانه سفارشی</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/wakav">واکاو</a></li>
+              </ul>
+            </li>
+
+            <!-- بلاگ -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">بلاگ</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/news-content">اخبار</a>
+                </li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/articles">مقالات</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- درباره ما -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">درباره ما</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/aboutus">تاریخچه</a>
+                </li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/organization-chart">چارت
+                    سازمانی</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/our-products">محصولات
+                    تولید شده توسط آریانیک</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/gallery">گالری</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/rewards">جوایز</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/certificates">گواهی
+                    ها</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/points">تمایز ها</a>
+                </li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/customers">مشتریان
+                    ما</a></li>
+                <li><a class="dropdown-item"
+                    href="/web/20250126093931/https://aryanic.com/page/growth-opportunities">فرصت های رشد با آریانیک</a>
+                </li>
+                <li><a class="dropdown-item"
+                    href="/web/20250126093931/https://aryanic.com/page/register-documents">اسناد ثبتی شرکت</a></li>
+              </ul>
+            </li>
+
+            <!-- ارتباط با ما -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">ارتباط
+                با ما</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/contactus">ارتباط با
+                    مدیریت</a></li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside">
+                    ارتباط با پشتیبانی
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item"
+                        href="/web/20250126093931/https://aryanic.com/page/software-support-contact">پشتیبانی نرم
+                        افزار</a></li>
+                    <li><a class="dropdown-item"
+                        href="/web/20250126093931/https://aryanic.com/page/host-support-contact">پشتیبانی میزبانی وب</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/mailroom-contact">ارتباط
+                    با دبیرخانه</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/customer-voice">صدای
+                    مشتری</a></li>
+              </ul>
+            </li>
+
+            <!-- همکاری -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">همکاری</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/job-opportunities">فرصت
+                    های شغلی</a></li>
+                <li><a class="dropdown-item"
+                    href="/web/20250126093931/https://aryanic.com/page/representation">نمایندگی</a></li>
+                <li><a class="dropdown-item" href="/web/20250126093931/https://aryanic.com/page/research-care">حمایت از
+                    پایان نامه ها</a></li>
+              </ul>
+            </li>
+
+            <!-- لینک‌های تکی -->
+            <li class="nav-item"><a class="nav-link" href="/web/20250126093931/https://aryanic.com/page/steve">من استیو
+                هستم</a></li>
+            <li class="nav-item"><a class="nav-link btn-pay"
+                href="/web/20250126093931/https://aryanic.com/page/online-pay">پرداخت آنلاین</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- HERO با ویدئو -->
+    <section id="hero" class="minh-78vh d-grid align-content-center text-white text-center">
+      <video autoplay muted loop playsinline>
+        <source src="video/bg.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="position-relative container container-custom" data-aos="zoom-in">
+        <h1 class="display-5 fw-extrabold">سامانه بومی <span class="text-brand">مدیریت محتوا</span></h1>
+        <p class="mt-3 fs-5 opacity-75">امن، سریع، مقیاس‌پذیر — با تجربه کاربری مدرن و پشتیبانی ۲۴/۷</p>
+        <div class="mt-4 d-flex justify-content-center gap-2">
+          <a href="#contact" class="btn btn-primary px-4 py-2 rounded-3 shadow-soft">درخواست دمو</a>
+          <a href="#product" class="btn btn-outline-light px-4 py-2 rounded-3 border-2">آشنایی با CMS</a>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <!-- اطلاعیه‌ها -->
+      <section id="announcements" class="py-5 bg-white">
+        <div class="container container-custom">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <h2 class="h4 fw-bold text-brand mb-0">اطلاعیه‌ها</h2>
+            <div class="d-flex align-items-center gap-2">
+              <button class="ann-prev btn btn-outline-secondary btn-sm rounded-3"><i
+                  class="ri-arrow-right-s-line"></i></button>
+              <button class="ann-next btn btn-outline-secondary btn-sm rounded-3"><i
+                  class="ri-arrow-left-s-line"></i></button>
+            </div>
+          </div>
+          <div class="swiper ann-swiper">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide">
+                <a href="#" class="d-block p-4 rounded-3 bg-light border text-reset text-decoration-none">
+                  <h3 class="fw-semibold mb-2 h6">به‌روزرسانی امنیتی نسخه 4.2</h3>
+                  <p class="small text-secondary line-clamp-3 mb-0">پچ امنیتی جدید برای مدیریت توکن‌ها و لاگ‌برداری
+                    افزوده شد.</p>
+                  <span class="d-inline-flex align-items-center gap-1 mt-2 text-brand small">مشاهده<i
+                      class="ri-arrow-left-line"></i></span>
+                </a>
+              </article>
+              <article class="swiper-slide">
+                <a href="#" class="d-block p-4 rounded-3 bg-light border text-reset text-decoration-none">
+                  <h3 class="fw-semibold mb-2 h6">انتشار ماژول فرم‌ساز پیشرفته</h3>
+                  <p class="small text-secondary line-clamp-3 mb-0">ایجاد فرم‌های پویا با شرط‌گذاری و اتصال به
+                    وب‌هوک‌ها.</p>
+                  <span class="d-inline-flex align-items-center gap-1 mt-2 text-brand small">مشاهده<i
+                      class="ri-arrow-left-line"></i></span>
+                </a>
+              </article>
+              <article class="swiper-slide">
+                <a href="#" class="d-block p-4 rounded-3 bg-light border text-reset text-decoration-none">
+                  <h3 class="fw-semibold mb-2 h6">مهاجرت دیتابیس بدون وقفه</h3>
+                  <p class="small text-secondary line-clamp-3 mb-0">Migration جدید امکان ارتقا بدون Downtime را می‌دهد.
+                  </p>
+                  <span class="d-inline-flex align-items-center gap-1 mt-2 text-brand small">مشاهده<i
+                      class="ri-arrow-left-line"></i></span>
+                </a>
+              </article>
+              <article class="swiper-slide">
+                <a href="#" class="d-block p-4 rounded-3 bg-light border text-reset text-decoration-none">
+                  <h3 class="fw-semibold mb-2 h6">تخفیف ویژه پکیج سازمانی</h3>
+                  <p class="small text-secondary line-clamp-3 mb-0">تا پایان ماه، ۲۰٪ تخفیف برای قراردادهای سالانه.</p>
+                  <span class="d-inline-flex align-items-center gap-1 mt-2 text-brand small">مشاهده<i
+                      class="ri-arrow-left-line"></i></span>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- درباره ما + مزیت‌ها -->
+      <section id="about" class="py-5 bg-light">
+        <div class="container container-custom">
+          <div class="row align-items-center g-4">
+            <div class="col-md-6" data-aos="fade-left">
+              <span class="small text-brand fw-semibold">درباره ما</span>
+              <h2 class="mt-2 h3 fw-bold">۱۵+ سال تجربه در توسعه سامانه‌های سازمانی</h2>
+              <p class="mt-3 text-secondary">
+                تمرکز ما بر CMS بومی با امنیت، مقیاس‌پذیری و تجربه کاربری عالی است.
+              </p>
+              <div class="row g-3 text-center mt-3">
+                <div class="col-sm-4">
+                  <div class="p-4 bg-white rounded-3 shadow-soft item" data-counter="650">
+                    <div class="h5 fw-bold text-brand counter">0</div>
+                    <div class="small opacity-75 mt-1">پروژه موفق</div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="p-4 bg-white rounded-3 shadow-soft item" data-counter="98">
+                    <div class="h5 fw-bold text-brand counter">0</div>
+                    <div class="small opacity-75 mt-1">رضایت مشتری (%)</div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="p-4 bg-white rounded-3 shadow-soft item" data-counter="24">
+                    <div class="h5 fw-bold text-brand counter">0</div>
+                    <div class="small opacity-75 mt-1">محصول و ماژول</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-right">
+              <img src="img/about-us-vector.png"
+                alt="جلسه تیمی" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول -->
+      <section id="product" class="py-5 bg-white">
+        <div class="container container-custom">
+          <div class="row align-items-center g-4">
+            <div class="col-md-6" data-aos="fade-left">
+              <span class="small text-brand fw-semibold">محصول اصلی</span>
+              <h2 class="mt-2 h3 fw-bold">سامانه بومی مدیریت محتوا (CMS)</h2>
+              <ul class="mt-3 text-body">
+                <li class="d-flex gap-2 align-items-start mb-2"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>ویرایشگر بلوکی، قالب‌ساز و مدیریت
+                    رسانه</span></li>
+                <li class="d-flex gap-2 align-items-start mb-2"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>نقش‌ها و مجوزهای دقیق، ثبت لاگ و
+                    گزارش‌گیری</span></li>
+                <li class="d-flex gap-2 align-items-start mb-2"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>چندسایتگی، نسخه‌سازی محتوا و گردش‌کار
+                    انتشار</span></li>
+                <li class="d-flex gap-2 align-items-start"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>API و Webhook برای یکپارچه‌سازی</span>
+                </li>
+              </ul>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact" class="btn btn-primary">گرفتن دمو</a>
+                <a href="#blog" class="btn btn-outline-secondary">مطالعه بیشتر</a>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-right">
+              <img src="img/highportal.png" alt="موکاپ CMS"
+                class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول -->
+      <section id="product" class="py-5 bg-light">
+        <div class="container container-custom">
+          <div class="row align-items-center g-4">
+            <div class="col-md-6" data-aos="fade-right">
+              <img src="img/highcms.png" alt="موکاپ CMS"
+                class="img-fluid">
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <span class="small text-brand fw-semibold">محصول اصلی</span>
+              <h2 class="mt-2 h3 fw-bold">سامانه بومی مدیریت محتوا (CMS)</h2>
+              <ul class="mt-3 text-body">
+                <li class="d-flex gap-2 align-items-start mb-2"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>ویرایشگر بلوکی، قالب‌ساز و مدیریت
+                    رسانه</span></li>
+                <li class="d-flex gap-2 align-items-start mb-2"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>نقش‌ها و مجوزهای دقیق، ثبت لاگ و
+                    گزارش‌گیری</span></li>
+                <li class="d-flex gap-2 align-items-start mb-2"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>چندسایتگی، نسخه‌سازی محتوا و گردش‌کار
+                    انتشار</span></li>
+                <li class="d-flex gap-2 align-items-start"><i
+                    class="ri-checkbox-circle-line text-brand fs-5"></i><span>API و Webhook برای یکپارچه‌سازی</span>
+                </li>
+              </ul>
+              <div class="mt-3 d-flex gap-2">
+                <a href="#contact" class="btn btn-primary">گرفتن دمو</a>
+                <a href="#blog" class="btn btn-outline-secondary">مطالعه بیشتر</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- مشتریان/همکاران -->
+      <section id="clients" class="py-5 bg-white">
+        <div class="container container-custom">
+          <h2 class="h5 fw-bold text-brand mb-3">برخی از مشتریان و همکاران</h2>
+          <div class="swiper clients-swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide d-grid place-items-center"><img class="h-10 opacity-75"
+                  src="img/customer1.png" alt="Client1"></div>
+              <div class="swiper-slide d-grid place-items-center"><img class="h-10 opacity-75"
+                  src="img/customer2.png" alt="Client2"></div>
+              <div class="swiper-slide d-grid place-items-center"><img class="h-10 opacity-75"
+                  src="img/customer3.png" alt="Client3"></div>
+              <div class="swiper-slide d-grid place-items-center"><img class="h-10 opacity-75"
+                  src="img/customer4.png" alt="Client4"></div>
+              <div class="swiper-slide d-grid place-items-center"><img class="h-10 opacity-75"
+                  src="img/customer5.png" alt="Client5"></div>
+              <div class="swiper-slide d-grid place-items-center"><img class="h-10 opacity-75"
+                  src="img/customer6.png" alt="Client6"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- خدمات -->
+      <section id="services" class="py-5 bg-light">
+  <div class="container container-custom">
+    <h2 class="h3 fw-bold mb-4 text-brand">خدمات ما</h2>
+
+    <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+
+      <!-- هاست و دامنه -->
+      <div class="col" data-aos="fade-up">
+        <div class="p-4 rounded-3 bg-light border hover-shadow">
+          <i class="ri-database-2-line fs-2 text-brand"></i>
+          <h3 class="mt-2 h6 fw-bold">هاست و دامنه</h3>
+          <p class="small text-secondary mb-0">
+            انواع سرورها بر حسب کاربرد جهت میزبانی وب‌سایت شما در ۳ دیتاسنتر داخل کشور.
+          </p>
+        </div>
+      </div>
+
+      <!-- تولید سامانه سفارشی -->
+      <div class="col" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 rounded-3 bg-light border">
+          <i class="ri-settings-3-line fs-2 text-brand"></i>
+          <h3 class="mt-2 h6 fw-bold">تولید سامانه سفارشی</h3>
+          <p class="small text-secondary mb-0">
+            تولید سامانه‌های آنلاین و آفلاین برحسب نیاز و سفارش مشتری؛ با تجربه چند هزار مشتری.
+          </p>
+        </div>
+      </div>
+
+      <!-- طراحی سایت -->
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 rounded-3 bg-light border">
+          <i class="ri-palette-line fs-2 text-brand"></i>
+          <h3 class="mt-2 h6 fw-bold">طراحی سایت</h3>
+          <p class="small text-secondary mb-0">
+            ترکیبی از تجربه ۲۰ ساله و نوآوری‌های روز؛ بهینه‌ترین وب‌سایت را برای شما می‌آوریم.
+          </p>
+        </div>
+      </div>
+
+      <!-- هوش تجاری -->
+      <div class="col" data-aos="fade-up">
+        <div class="p-4 rounded-3 bg-light border">
+          <i class="ri-bar-chart-2-line fs-2 text-brand"></i>
+          <h3 class="mt-2 h6 fw-bold">هوش تجاری</h3>
+          <p class="small text-secondary mb-0">
+            انواع خدمات BI برای افزایش آگاهی و تصمیم‌گیری‌های اثربخش.
+          </p>
+        </div>
+      </div>
+
+      <!-- خدمات سئو -->
+      <div class="col" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-4 rounded-3 bg-light border">
+          <i class="ri-search-eye-line fs-2 text-brand"></i>
+          <h3 class="mt-2 h6 fw-bold">خدمات سئو</h3>
+          <p class="small text-secondary mb-0">
+            خدمات سئو طبق بروزترین استانداردهای گوگل برای افزایش رتبه سایت.
+          </p>
+        </div>
+      </div>
+
+      <!-- میز خدمت -->
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="p-4 rounded-3 bg-light border">
+          <i class="ri-layout-grid-line fs-2 text-brand"></i>
+          <h3 class="mt-2 h6 fw-bold">میز خدمت</h3>
+          <p class="small text-secondary mb-0">
+            ارائه خدمات سریع و آسان به‌صورت الکترونیکی برای کاهش مراجعات حضوری ارباب‌رجوع.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- پکیج‌ها -->
+      <section id="packages" class="py-5 bg-white">
+        <div class="container container-custom">
+          <h2 class="h3 fw-bold mb-4 text-brand">پکیج‌ها</h2>
+          <div class="row g-3 row-cols-1 row-cols-md-3">
+            <div class="col" data-aos="zoom-in">
+              <div class="p-4 rounded-3 bg-white border">
+                <h3 class="h6 fw-bold">پایه</h3>
+                <div class="mt-1 h4 fw-bold">شروعی مناسب</div>
+                <ul class="mt-3 small text-body">
+                  <li>ویرایشگر + رسانه</li>
+                  <li>یک زبان</li>
+                  <li>پشتیبانی ایمیلی</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-secondary mt-3">درخواست مشاوره</a>
+              </div>
+            </div>
+            <div class="col" data-aos="zoom-in" data-aos-delay="100">
+              <div class="p-4 rounded-3 bg-white border border-2 border-primary position-relative shadow-soft">
+                <span
+                  class="position-absolute translate-middle-y top-0 start-25 badge bg-primary rounded-pill">پرفروش</span>
+                <h3 class="h6 fw-bold">حرفه‌ای</h3>
+                <div class="mt-1 h4 fw-bold">برای سازمان‌ها</div>
+                <ul class="mt-3 small text-body">
+                  <li>چندسایتی/چندزبانه</li>
+                  <li>Workflow انتشار</li>
+                  <li>SSO و نقش‌های پیشرفته</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary mt-3">درخواست پیش‌فاکتور</a>
+              </div>
+            </div>
+            <div class="col" data-aos="zoom-in" data-aos-delay="200">
+              <div class="p-4 rounded-3 bg-white border">
+                <h3 class="h6 fw-bold">سازمانی</h3>
+                <div class="mt-1 h4 fw-bold">سفارشی</div>
+                <ul class="mt-3 small text-body">
+                  <li>On-Prem/Private Cloud</li>
+                  <li>امنیت و مانیتورینگ تکمیلی</li>
+                  <li>یکپارچه‌سازی اختصاصی</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline-secondary mt-3">درخواست جلسه</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- جوایز -->
+      <section id="awards" class="py-5 bg-light">
+        <div class="container container-custom">
+          <h2 class="h5 fw-bold text-brand mb-3">جوایز و گواهی‌ها</h2>
+          <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+            <div class="col" data-aos="fade-up">
+              <div class="p-4 rounded-3 bg-light border">
+                <i class="ri-award-line fs-2 text-brand"></i>
+                <div class="mt-2 fw-bold">رتبه برتر جشنواره وب</div>
+                <div class="small text-secondary mt-1">کیفیت محصول و پشتیبانی</div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="p-4 rounded-3 bg-light border">
+                <i class="ri-medal-line fs-2 text-brand"></i>
+                <div class="mt-2 fw-bold">استاندارد ISO/IEC</div>
+                <div class="small text-secondary mt-1">فرایندهای توسعه نرم‌افزار</div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+              <div class="p-4 rounded-3 bg-light border">
+                <i class="ri-shield-check-line fs-2 text-brand"></i>
+                <div class="mt-2 fw-bold">گواهی امنیت</div>
+                <div class="small text-secondary mt-1">تست نفوذ دوره‌ای</div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="p-4 rounded-3 bg-light border">
+                <i class="ri-thumb-up-line fs-2 text-brand"></i>
+                <div class="mt-2 fw-bold">رضایت مشتریان</div>
+                <div class="small text-secondary mt-1">براساس نظرسنجی</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- مقالات -->
+      <section id="blog" class="py-5 bg-white">
+        <div class="container container-custom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h2 class="h3 fw-bold text-brand mb-0">مقالات اخیر</h2>
+            <a href="#" class="small text-brand text-decoration-underline">مشاهده همه</a>
+          </div>
+          <div class="row g-3 row-cols-1 row-cols-md-3">
+            <article class="col" data-aos="fade-up">
+              <div class="rounded-3 overflow-hidden bg-white border h-100">
+                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop"
+                  alt="مقاله1" class="w-100 h-44 object-fit-cover">
+                <div class="p-4">
+                  <a href="#" class="d-block fw-bold text-decoration-none text-dark">CMS بومی و امنیت</a>
+                  <p class="small text-secondary mt-2 mb-0 line-clamp-3">کنترل دسترسی و لاگ.</p>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="rounded-3 overflow-hidden bg-white border h-100">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop"
+                  alt="مقاله2" class="w-100 h-44 object-fit-cover">
+                <div class="p-4">
+                  <a href="#" class="d-block fw-bold text-decoration-none text-dark">انتخاب CMS مناسب</a>
+                  <p class="small text-secondary mt-2 mb-0 line-clamp-3">مقیاس‌پذیری و گردش‌کار.</p>
+                </div>
+              </div>
+            </article>
+            <article class="col" data-aos="fade-up" data-aos-delay="200">
+              <div class="rounded-3 overflow-hidden bg-white border h-100">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop"
+                  alt="مقاله3" class="w-100 h-44 object-fit-cover">
+                <div class="p-4">
+                  <a href="#" class="d-block fw-bold text-decoration-none text-dark">افزونه‌های مهم محتوا</a>
+                  <p class="small text-secondary mt-2 mb-0 line-clamp-3">فرم‌ساز و زمان‌بندی.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="position-relative py-5 bg-brand text-white overflow-hidden">
+        <img src="img/bg.webp" alt=""
+          class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-25">
+        <div class="position-relative container container-custom">
+          <div class="row align-items-center g-4">
+            <div class="col-md-6">
+              <h3 class="h4 fw-bold">ارتقای وب‌سایت سازمانی با CMS بومی</h3>
+              <p class="mt-2 opacity-75 mb-0">برای دمو و مشاوره تخصصی کلیک کنید.</p>
+            </div>
+            <div class="col-md-6 text-md-start text-lg-end">
+              <a href="#contact" class="btn btn-light text-brand shadow-soft">هماهنگی جلسه</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- تماس -->
+      <section id="contact" class="py-5 bg-white">
+        <div class="container container-custom">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-6">
+              <h2 class="h3 fw-bold text-brand">ارتباط با ما</h2>
+              <div class="mt-3 rounded-3 overflow-hidden border">
+                <iframe style="width:100%;height:350px;margin-bottom: -10px;"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1618.7383886014754!2d51.414929!3d35.763663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e069c9b6dad77%3A0x47b904924eacf05e!2sAryanic!5e0!3m2!1sen!2s!4v1757015003554!5m2!1sen!2s"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <form class="bg-light p-4 rounded-3 border"
+                onsubmit="event.preventDefault(); alert('پیام شما ثبت شد ✅');">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label class="form-label small">نام</label>
+                    <input required type="text" class="form-control focus-ring" placeholder="نام و نام خانوادگی">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label small">ایمیل</label>
+                    <input required type="email" class="form-control focus-ring" placeholder="you@example.com">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small">موضوع</label>
+                    <input type="text" class="form-control focus-ring" placeholder="موضوع پیام">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label small">پیام</label>
+                    <textarea required rows="4" class="form-control focus-ring" placeholder="متن پیام شما"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100 mt-3">ارسال پیام</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer class="bg-dark text-white pt-5">
+      <div class="container container-custom">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <img src="img/e-namad.png" alt="ای‌نماد"
+              class="rounded-3 bg-white bg-opacity-10 p-2" data-keep style="height: 9rem;">
+          </div>
+          <div class="col-lg-3">
+            <div class="fw-bold mb-3">ارتباط با ما</div>
+            <ul class="list-unstyled small opacity-75 mb-0">
+              <li>تهران - بلوار نلسون ماندلا (جردن) - خیابان قبادیان غربی - ساختمان شکوه پلاک37 - طبقه اول - واحد 2</li>
+              <li>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</li>
+              <li>ایمیل:  info@aryanic.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <div class="fw-bold mb-3">دسترسی سریع</div>
+            <ul class="list-unstyled small opacity-75 mb-0">
+              <li><a href="#clients" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">پرتال
+                  سازمانی</a></li>
+              <li><a href="#product" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">سیستم
+                  مدیریت محتوا</a></li>
+              <li><a href="#services" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">طراحی
+                  سایت</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <div class="fw-bold mb-3">دسترسی سریع</div>
+            <ul class="list-unstyled small opacity-75 mb-0">
+              <li><a href="#packages" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">ثبت
+                  هاست و دامین</a></li>
+              <li><a href="#contact" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">پنل
+                  کاربری</a></li>
+              <li><a href="#services" class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">ارسال
+                  تیکت</a></li>
+              <li><a href="#packages"
+                  class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">پرداخت آنلاین</a></li>
+              <li><a href="#services"
+                  class="link-light link-underline-opacity-0 link-underline-opacity-100-hover">توافقنامه سطح خدمات</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row g-3 text-center small opacity-75 mt-4">
+          <div class="col-12 col-sm-3">آخرین بروزرسانی سایت: ۱۴۰۳/۱۱/۰۶</div>
+          <div class="col-12 col-sm-3">بازدیدکنندگان امروز: <span id="visits-today">۲۳۶۴</span></div>
+          <div class="col-12 col-sm-3">بازدیدکنندگان این صفحه: <span id="visits-page">۸۸۵۵</span></div>
+          <div class="col-12 col-sm-3"> کل بازدیدکنندگان:<span id="visits-all">۳۷۶۴۲۰۵</span></div>
+        </div>
+
+        <div class="mt-4 bg-black bg-opacity-25 Copyright">
+          <div class="py-3 text-center small">
+            Copyright © <span id="year"></span> — All Rights Reserved • Designed by <b>شرکت فن آوری اطلاعات آریانیک داده</b>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- دکمه و پنل دسترس‌پذیری -->
+<button id="accToggle" class="acc-btn btn btn-primary rounded-pill shadow-soft" aria-label="امکانات دسترس‌پذیری">
+  <i class="fas fa-universal-access"></i>
+</button>
+
+<div id="accPanel" class="acc-panel d-none" role="dialog" aria-modal="true" aria-labelledby="accTitle">
+  <div class="acc-header">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fas fa-universal-access"></i>
+      <b id="accTitle">تنظیمات دسترس‌پذیری</b>
+    </div>
+    <button id="accClose" class="btn btn-light btn-sm rounded-3" aria-label="بستن">
+      <i style="font-size:20px" class="fa">&#xf00d;</i>
+    </button>
+  </div>
+
+  <div class="acc-body small">
+
+    <!-- اندازه فونت -->
+    <div class="mb-1">
+      <div class="fw-semibold mb-1"><i class="fas fa-text-height"></i> اندازه فونت</div>
+      <div class="d-flex gap-1">
+        <button data-fs="-10" class="btn btn-outline-secondary btn-sm rounded-3">کوچکتر</button>
+        <button data-fs="0"   class="btn btn-outline-secondary btn-sm rounded-3">پیش‌فرض</button>
+        <button data-fs="+10" class="btn btn-outline-secondary btn-sm rounded-3">بزرگتر</button>
+      </div>
+    </div>
+
+    <!-- فاصله خطوط (سه حالته) -->
+    <div class="mb-1">
+      <div class="fw-semibold mb-1"><i class="fas fa-grip-lines"></i>فاصله خطوط</div>
+      <div class="btn-group tri-switch" data-key="lh" role="group" aria-label="فاصله خطوط">
+        <button type="button" class="btn btn-outline-secondary btn-sm" data-val="0">خاموش</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm" data-val="1">کم</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm" data-val="2">زیاد</button>
+      </div>
+    </div>
+
+    <div class="mb-1 row row-cols-1 row-cols-sm-1 g-1">
+
+      <!-- کنتراست (سه حالته) -->
+      <div class="col">
+        <div class="fw-semibold mb-1"><i class="fa-solid fa-circle-half-stroke me-1"></i> کنتراست</div>
+        <div class="btn-group tri-switch w-100" data-key="hc" role="group" aria-label="کنتراست">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="0">عادی</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="1">+ کم</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="2">+ زیاد</button>
+        </div>
+      </div>
+
+      <!-- سیاه‌وسفید / اشباع رنگ (سه حالته) -->
+      <div class="col">
+        <div class="fw-semibold mb-1"><i class="fas fa-palette"></i> اشباع رنگ</div>
+        <div class="btn-group tri-switch w-100" data-key="bw" role="group" aria-label="اشباع رنگ">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="0">عادی</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="1">کم</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="2">سیاه‌وسفید</button>
+        </div>
+      </div>
+
+      <!-- نمایش تصاویر (سه حالته) -->
+      <div class="col">
+        <div class="fw-semibold mb-1"><i class="fas fa-image"></i>نمایش تصاویر</div>
+        <div class="btn-group tri-switch w-100" data-key="imgmode" role="group" aria-label="نمایش تصاویر">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="0">عادی</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="1">بلور</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="2">عدم نمایش</button>
+        </div>
+      </div>
+
+      <!-- زیرخط لینک‌ها (سه حالته) -->
+      <div class="col">
+        <div class="fw-semibold mb-1"><i class="fas fa-underline"></i> زیرخط لینک‌ها</div>
+        <div class="btn-group tri-switch w-100" data-key="ul" role="group" aria-label="زیرخط لینک‌ها">
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="0">خاموش</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="1">روی هاور</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" data-val="2">همیشه</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- انتخاب رنگ تم -->
+    <div class="mb-1">
+      <div class="fw-semibold mb-2"><i class="fa-solid fa-droplet me-1"></i> انتخاب رنگ تم</div>
+      <div class="theme-grid">
+        <button class="theme-dot" data-color="#0664b7" style="background:#0664b7" title="آبی"></button>
+        <button class="theme-dot" data-color="#7d3cff" style="background:#7d3cff" title="بنفش"></button>
+        <button class="theme-dot" data-color="#27ae60" style="background:#27ae60" title="سبز"></button>
+        <button class="theme-dot" data-color="#e74c3c" style="background:#e74c3c" title="قرمز"></button>
+        <button class="theme-dot" data-color="#f1c40f" style="background:#f1c40f" title="زرد"></button>
+      </div>
+    </div>
+
+    <div class="mt-1">
+      <button id="accReset" class="btn btn-outline-secondary btn-sm rounded-3">
+        <i class="fa-solid fa-rotate-left align-middle"></i> بازنشانی همه
+      </button>
+    </div>
+
+  </div>
+</div>
+<a id="totop-btn"><i class="fas fa-chevron-up"></i></a>
+    <script src="libraries/aos.js"></script>
+    <script src="libraries/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!--<script src="https://web.archive.org/web/20250126093931/https://widget-react.raychat.io/install/widget.js" async=""></script>-->
+    <noscript>
+      <div class="container container-custom my-4 p-3 bg-warning-subtle border rounded-3">برای دیدن انیمیشن‌ها
+        JavaScript را فعال کنید.</div>
+    </noscript>
+  </body>
+
+  </html>

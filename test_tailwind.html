@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <!-- ===== SEO ===== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>سامانه بومی CMS | شرکت فناوری اطلاعات آریانیک</title>
+  <meta name="description" content="طراحی پورتال سازمانی و ارائه خدمات طراحی سایت و سئو ، سامانه بومی و امن مدیریت محتوا (CMS) با رابط فارسی، تجربه کاربری مدرن و پشتیبانی ۲۴/۷. مناسب سازمان‌ها و نهادها." />
+  <link rel="canonical" href="https://aryanic.com/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="سامانه بومی CMS | شرکت آریانیک">
+  <meta property="og:description" content="CMS بومی، امن و مقیاس‌پذیر با پشتیبانی فارسی.">
+  <meta property="og:url" content="https://aryanic.com">
+  <meta property="og:image" content="img/CMS.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="سامانه بومی CMS | شرکت آریانیک">
+  <meta name="twitter:description" content="CMS بومی، امن و مقیاس‌پذیر با پشتیبانی فارسی.">
+  <meta name="twitter:image" content="img/CMS.png">
+
+  <!-- Favicons (نمونه/قابل‌جایگزینی) -->
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#0664b7">
+  <meta name="theme-color" content="#0664b7">
+
+  <!-- Preconnect -->
+  <link rel="stylesheet" href="libraries/output.css"/>
+
+  <!-- Tailwind config -->
+  <script>
+    tailwind = {
+      theme: {
+        extend: {
+          colors: { brand: "#0664b7", brandDark: "#054f90" },
+          fontFamily: { iran: ["IranSans","sans-serif"] },
+          boxShadow: { soft: "0 10px 30px rgba(0,0,0,.08)" }
+        }
+      },
+      corePlugins: { container:false }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Iran Sans -->
+  <link href="https://cdn.fontcdn.ir/Font/Persian/IranSans/IranSans.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="libraries/remixicon.css" rel="stylesheet">
+  <!-- AOS & Swiper -->
+  <link rel="stylesheet" href="libraries/swiper-bundle.min.css"/>
+  <link href="libraries/aos.css" rel="stylesheet">
+
+  <style>
+    html,body{font-family:'IranSans',sans-serif}
+    .container{max-width:1200px;margin-inline:auto;padding-inline:1rem}
+    /* تم پویا (برای انتخاب رنگ) */
+    :root{--brand:#0664b7}
+    body.use-cssvar .bg-brand{background:var(--brand)!important}
+    body.use-cssvar .text-brand{color:var(--brand)!important}
+    body.use-cssvar .border-brand{border-color:var(--brand)!important}
+    body.use-cssvar .ring-brand{--tw-ring-color:var(--brand)!important}
+
+    /* حالت‌ها برای پنل دسترس‌پذیری */
+    html{font-size:100%}           /* مقیاس فونت پایه */
+    body.lh-boost *{line-height:1.9!important}
+    body.hc{filter:contrast(1.35) saturate(1.15)}
+    body.bw{filter:grayscale(1) contrast(1.1)}
+    body.underline-links a{text-decoration:underline!important}
+    body.no-images img:not([data-keep]){display:none!important}
+
+    /* پنل شناور دسترس‌پذیری */
+    .acc-btn{position:fixed;inset-inline-end:16px;bottom:16px;z-index:60}
+    .acc-panel{position:fixed;inset-block-end:16px;inset-inline-end:16px;
+      width:300px;max-width:94vw;background:#fff;border:1px solid #e5e7eb;border-radius:16px;
+      box-shadow:0 12px 30px rgba(0,0,0,.15);z-index:70}
+    .acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid #eee}
+    .acc-body{padding:12px 14px;max-height:70vh;overflow:auto}
+    .sw{appearance:none;width:44px;height:26px;border-radius:999px;background:#e5e7eb;position:relative;cursor:pointer;outline:none;transition:.2s}
+    .sw:checked{background:var(--brand)}
+    .sw:before{content:"";position:absolute;inset-block-start:3px;inset-inline-start:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}
+    .sw:checked:before{transform:translateX(18px)}
+    .theme-dot{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 2px #0001;cursor:pointer}
+    .theme-grid{display:flex;gap:8px;flex-wrap:wrap}
+    /* برای آفلاین: فایل‌های CDN رو دانلود و همین لینک‌ها رو به مسیر محلی تغییر بدید */
+  </style>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"شرکت طراحی و مهندسی نرم‌افزار","url":"https://aryanic.com","logo":"https://aryanic.comstatic/logo.png"}
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50 use-cssvar">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:right-3 bg-brand text-white px-3 py-2 rounded-lg">پرش به محتوا</a>
+
+  <!-- نوار اعلان -->
+  <div class="bg-brand text-white text-sm">
+    <div class="container flex items-center justify-between py-2">
+      <p>🎉 نسخه جدید CMS با ویرایشگر بلوکی و امنیت تقویت‌شده منتشر شد.</p>
+      <a href="#announcements" class="underline">جزئیات</a>
+    </div>
+  </div>
+
+  <!-- هدر -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
+    <div class="container flex items-center justify-between py-3">
+      <div class="flex items-center gap-3">
+        <img src="img/AryanicLogo.png" alt="لوگو" class="h-10" data-keep>
+        <span class="hidden sm:inline font-bold text-brand">شرکت طراحی و مهندسی نرم‌افزار</span>
+      </div>
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="#" class="hover:text-brand">خانه</a>
+        <a href="#about" class="hover:text-brand">درباره ما</a>
+        <a href="#product" class="hover:text-brand">محصولات</a>
+        <a href="#packages" class="hover:text-brand">پکیج‌ها</a>
+        <a href="#services" class="hover:text-brand">خدمات</a>
+        <a href="#clients" class="hover:text-brand">مشتریان</a>
+        <a href="#awards" class="hover:text-brand">جوایز</a>
+        <a href="#blog" class="hover:text-brand">مقالات</a>
+        <a href="#contact" class="hover:text-brand">تماس</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-brand text-white hover:bg-brandDark shadow-soft">درخواست دمو</a>
+      </nav>
+      <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-xl border hover:bg-gray-100"><i class="ri-menu-4-line text-2xl"></i></button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden hidden border-t bg-white">
+      <div class="container py-3 grid gap-2 text-sm">
+        <a class="py-2 hover:text-brand" href="#">خانه</a>
+        <a class="py-2 hover:text-brand" href="#about">درباره ما</a>
+        <a class="py-2 hover:text-brand" href="#product">محصولات</a>
+        <a class="py-2 hover:text-brand" href="#packages">پکیج‌ها</a>
+        <a class="py-2 hover:text-brand" href="#services">خدمات</a>
+        <a class="py-2 hover:text-brand" href="#clients">مشتریان</a>
+        <a class="py-2 hover:text-brand" href="#awards">جوایز</a>
+        <a class="py-2 hover:text-brand" href="#blog">مقالات</a>
+        <a class="py-2 hover:text-brand" href="#contact">تماس</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO با ویدئو -->
+  <section id="hero" class="relative min-h-[78vh] grid place-items-center overflow-hidden">
+    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+      <source src="https://cdn.coverr.co/videos/coverr-teamwork-in-the-office-6267/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+
+    <div class="relative container text-white text-center" data-aos="zoom-in">
+      <h1 class="text-4xl sm:text-6xl font-extrabold">سامانه بومی <span class="text-brand">مدیریت محتوا</span></h1>
+      <p class="mt-4 text-lg sm:text-xl opacity-90">امن، سریع، مقیاس‌پذیر — با تجربه کاربری مدرن و پشتیبانی ۲۴/۷</p>
+      <div class="mt-8 flex items-center justify-center gap-3">
+        <a href="#contact" class="px-5 py-3 rounded-xl bg-brand text-white hover:scale-[1.03] shadow-soft">درخواست دمو</a>
+        <a href="#product" class="px-5 py-3 rounded-xl bg-white/10 border border-white/30 hover:bg-white/20">آشنایی با CMS</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- اطلاعیه‌ها -->
+    <section id="announcements" class="py-14 bg-white">
+      <div class="container">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold text-brand">اطلاعیه‌ها</h2>
+          <div class="flex items-center gap-2">
+            <button class="ann-prev w-9 h-9 grid place-items-center rounded-lg border hover:bg-gray-100"><i class="ri-arrow-right-s-line text-xl"></i></button>
+            <button class="ann-next w-9 h-9 grid place-items-center rounded-lg border hover:bg-gray-100"><i class="ri-arrow-left-s-line text-xl"></i></button>
+          </div>
+        </div>
+        <div class="swiper ann-swiper">
+          <div class="swiper-wrapper">
+            <!-- نمونه‌ها -->
+            <article class="swiper-slide">
+              <a href="#" class="block p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition">
+                <h3 class="font-semibold mb-2">به‌روزرسانی امنیتی نسخه 4.2</h3>
+                <p class="text-sm text-gray-600 line-clamp-3">پچ امنیتی جدید برای مدیریت توکن‌ها و لاگ‌برداری افزوده شد.</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-brand text-sm">مشاهده<i class="ri-arrow-left-line"></i></span>
+              </a>
+            </article>
+            <article class="swiper-slide">
+              <a href="#" class="block p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition">
+                <h3 class="font-semibold mb-2">انتشار ماژول فرم‌ساز پیشرفته</h3>
+                <p class="text-sm text-gray-600 line-clamp-3">ایجاد فرم‌های پویا با شرط‌گذاری و اتصال به وب‌هوک‌ها.</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-brand text-sm">مشاهده<i class="ri-arrow-left-line"></i></span>
+              </a>
+            </article>
+            <article class="swiper-slide">
+              <a href="#" class="block p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition">
+                <h3 class="font-semibold mb-2">مهاجرت دیتابیس بدون وقفه</h3>
+                <p class="text-sm text-gray-600 line-clamp-3">Migration جدید امکان ارتقا بدون Downtime را می‌دهد.</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-brand text-sm">مشاهده<i class="ri-arrow-left-line"></i></span>
+              </a>
+            </article>
+            <article class="swiper-slide">
+              <a href="#" class="block p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition">
+                <h3 class="font-semibold mb-2">تخفیف ویژه پکیج سازمانی</h3>
+                <p class="text-sm text-gray-600 line-clamp-3">تا پایان ماه، ۲۰٪ تخفیف برای قراردادهای سالانه.</p>
+                <span class="inline-flex items-center gap-1 mt-3 text-brand text-sm">مشاهده<i class="ri-arrow-left-line"></i></span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- درباره ما + مزیت‌ها -->
+    <section id="about" class="py-16 bg-gray-50">
+      <div class="container grid md:grid-cols-2 gap-10 items-center">
+        <div data-aos="fade-left">
+          <span class="text-sm text-brand font-semibold">درباره ما</span>
+          <h2 class="mt-2 text-3xl font-extrabold">۱۵+ سال تجربه در توسعه سامانه‌های سازمانی</h2>
+          <p class="mt-4 text-gray-600">
+            تمرکز ما بر CMS بومی با امنیت، مقیاس‌پذیری و تجربه کاربری عالی است.
+          </p>
+          <div class="mt-6 grid sm:grid-cols-3 gap-4 text-center">
+            <div class="p-5 rounded-xl bg-white shadow-soft" data-counter="650"><div class="text-2xl font-extrabold text-brand counter">0</div><div class="text-xs opacity-70 mt-1">پروژه موفق</div></div>
+            <div class="p-5 rounded-xl bg-white shadow-soft" data-counter="98"><div class="text-2xl font-extrabold text-brand counter">0</div><div class="text-xs opacity-70 mt-1">رضایت مشتری (%)</div></div>
+            <div class="p-5 rounded-xl bg-white shadow-soft" data-counter="24"><div class="text-2xl font-extrabold text-brand counter">0</div><div class="text-xs opacity-70 mt-1">محصول و ماژول</div></div>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="relative">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1600&auto=format&fit=crop" alt="جلسه تیمی" class="rounded-3xl shadow-soft">
+        </div>
+      </div>
+    </section>
+
+    <!-- محصول -->
+    <section id="product" class="py-16 bg-white">
+      <div class="container grid md:grid-cols-2 gap-10 items-center">
+        <div data-aos="fade-left">
+          <span class="text-sm text-brand font-semibold">محصول اصلی</span>
+          <h2 class="mt-2 text-3xl font-extrabold">سامانه بومی مدیریت محتوا (CMS)</h2>
+          <ul class="mt-6 space-y-3 text-gray-700">
+            <li class="flex items-start gap-3"><i class="ri-checkbox-circle-line text-xl text-brand mt-0.5"></i> ویرایشگر بلوکی، قالب‌ساز و مدیریت رسانه</li>
+            <li class="flex items-start gap-3"><i class="ri-checkbox-circle-line text-xl text-brand mt-0.5"></i> نقش‌ها و مجوزهای دقیق، ثبت لاگ و گزارش‌گیری</li>
+            <li class="flex items-start gap-3"><i class="ri-checkbox-circle-line text-xl text-brand mt-0.5"></i> چندسایتگی، نسخه‌سازی محتوا و گردش‌کار انتشار</li>
+            <li class="flex items-start gap-3"><i class="ri-checkbox-circle-line text-xl text-brand mt-0.5"></i> API و Webhook برای یکپارچه‌سازی</li>
+          </ul>
+          <div class="mt-8 flex gap-3">
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-brand text-white hover:scale-[1.03] shadow-soft">گرفتن دمو</a>
+            <a href="#blog" class="px-5 py-3 rounded-xl border hover:bg-gray-50">مطالعه بیشتر</a>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <img src="https://dummyimage.com/900x550/0664b7/ffffff&text=CMS+Dashboard" alt="موکاپ CMS" class="rounded-3xl shadow-soft">
+        </div>
+      </div>
+    </section>
+
+    <!-- مشتریان/همکاران -->
+    <section id="clients" class="py-14 bg-gray-50">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-brand mb-6">برخی از مشتریان و همکاران</h2>
+        <div class="swiper clients-swiper">
+          <div class="swiper-wrapper items-center">
+            <div class="swiper-slide grid place-items-center"><img class="h-10 opacity-70 hover:opacity-100 transition" src="https://dummyimage.com/120x40/999/fff&text=Client+1" alt="Client1"></div>
+            <div class="swiper-slide grid place-items-center"><img class="h-10 opacity-70 hover:opacity-100 transition" src="https://dummyimage.com/120x40/999/fff&text=Client+2" alt="Client2"></div>
+            <div class="swiper-slide grid place-items-center"><img class="h-10 opacity-70 hover:opacity-100 transition" src="https://dummyimage.com/120x40/999/fff&text=Client+3" alt="Client3"></div>
+            <div class="swiper-slide grid place-items-center"><img class="h-10 opacity-70 hover:opacity-100 transition" src="https://dummyimage.com/120x40/999/fff&text=Client+4" alt="Client4"></div>
+            <div class="swiper-slide grid place-items-center"><img class="h-10 opacity-70 hover:opacity-100 transition" src="https://dummyimage.com/120x40/999/fff&text=Client+5" alt="Client5"></div>
+            <div class="swiper-slide grid place-items-center"><img class="h-10 opacity-70 hover:opacity-100 transition" src="https://dummyimage.com/120x40/999/fff&text=Client+6" alt="Client6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- خدمات -->
+    <section id="services" class="py-16 bg-white">
+      <div class="container">
+        <h2 class="text-3xl font-extrabold mb-10 text-brand">خدمات ما</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up">
+            <i class="ri-code-s-slash-line text-3xl text-brand"></i>
+            <h3 class="mt-3 font-bold">توسعه نرم‌افزار سفارشی</h3>
+            <p class="text-sm text-gray-600 mt-1">طراحی و پیاده‌سازی سامانه‌های اختصاصی.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="100">
+            <i class="ri-customer-service-2-line text-3xl text-brand"></i>
+            <h3 class="mt-3 font-bold">پشتیبانی و نگهداری ۲۴/۷</h3>
+            <p class="text-sm text-gray-600 mt-1">مانیتورینگ، به‌روزرسانی و پاسخ سریع.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="200">
+            <i class="ri-shield-star-line text-3xl text-brand"></i>
+            <h3 class="mt-3 font-bold">امنیت و سخت‌سازی</h3>
+            <p class="text-sm text-gray-600 mt-1">سخت‌سازی، تست نفوذ و تطابق با استانداردها.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up">
+            <i class="ri-arrow-left-right-line text-3xl text-brand"></i>
+            <h3 class="mt-3 font-bold">یکپارچه‌سازی (Integration)</h3>
+            <p class="text-sm text-gray-600 mt-1">API، SSO، وب‌هوک و اتوماسیون.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="100">
+            <i class="ri-server-line text-3xl text-brand"></i>
+            <h3 class="mt-3 font-bold">استقرار و مهاجرت</h3>
+            <p class="text-sm text-gray-600 mt-1">On-Prem/Cloud، مهاجرت بدون downtime.</p>
+          </div>
+          <div class="p-6 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="200">
+            <i class="ri-lightbulb-flash-line text-3xl text-brand"></i>
+            <h3 class="mt-3 font-bold">مشاوره و معماری</h3>
+            <p class="text-sm text-gray-600 mt-1">طراحی معماری و بهینه‌سازی کارایی.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- پکیج‌ها -->
+    <section id="packages" class="py-16 bg-gray-50">
+      <div class="container">
+        <h2 class="text-3xl font-extrabold mb-10 text-brand">پکیج‌ها</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-white border hover:shadow-soft transition" data-aos="zoom-in">
+            <h3 class="font-bold text-lg">پایه</h3>
+            <div class="mt-2 text-3xl font-extrabold">شروعی مناسب</div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700"><li>ویرایشگر + رسانه</li><li>یک زبان</li><li>پشتیبانی ایمیلی</li></ul>
+            <a href="#contact" class="mt-6 inline-block px-4 py-2 rounded-lg border hover:bg-gray-50">درخواست مشاوره</a>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border-2 border-brand shadow-soft relative" data-aos="zoom-in" data-aos-delay="100">
+            <span class="absolute -top-3 left-4 px-3 py-1 text-xs bg-brand text-white rounded-full">پرفروش</span>
+            <h3 class="font-bold text-lg">حرفه‌ای</h3>
+            <div class="mt-2 text-3xl font-extrabold">برای سازمان‌ها</div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700"><li>چندسایتی/چندزبانه</li><li>Workflow انتشار</li><li>SSO و نقش‌های پیشرفته</li></ul>
+            <a href="#contact" class="mt-6 inline-block px-4 py-2 rounded-lg bg-brand text-white hover:bg-brandDark">درخواست پیش‌فاکتور</a>
+          </div>
+          <div class="p-6 rounded-2xl bg-white border hover:shadow-soft transition" data-aos="zoom-in" data-aos-delay="200">
+            <h3 class="font-bold text-lg">سازمانی</h3>
+            <div class="mt-2 text-3xl font-extrabold">سفارشی</div>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700"><li>On-Prem/Private Cloud</li><li>امنیت و مانیتورینگ تکمیلی</li><li>یکپارچه‌سازی اختصاصی</li></ul>
+            <a href="#contact" class="mt-6 inline-block px-4 py-2 rounded-lg border hover:bg-gray-50">درخواست جلسه</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- جوایز -->
+    <section id="awards" class="py-14 bg-white">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-brand mb-8">جوایز و گواهی‌ها</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up">
+            <i class="ri-award-line text-3xl text-brand"></i><div class="mt-2 font-bold">رتبه برتر جشنواره وب</div>
+            <div class="text-xs text-gray-600 mt-1">کیفیت محصول و پشتیبانی</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="100">
+            <i class="ri-medal-line text-3xl text-brand"></i><div class="mt-2 font-bold">استاندارد ISO/IEC</div>
+            <div class="text-xs text-gray-600 mt-1">فرایندهای توسعه نرم‌افزار</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="200">
+            <i class="ri-shield-check-line text-3xl text-brand"></i><div class="mt-2 font-bold">گواهی امنیت</div>
+            <div class="text-xs text-gray-600 mt-1">تست نفوذ دوره‌ای</div>
+          </div>
+          <div class="p-5 rounded-2xl bg-gray-50 hover:bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="300">
+            <i class="ri-thumb-up-line text-3xl text-brand"></i><div class="mt-2 font-bold">رضایت مشتریان</div>
+            <div class="text-xs text-gray-600 mt-1">براساس نظرسنجی</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- مقالات -->
+    <section id="blog" class="py-16 bg-gray-50">
+      <div class="container">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-3xl font-extrabold text-brand">مقالات اخیر</h2>
+          <a href="#" class="text-sm text-brand hover:underline">مشاهده همه</a>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="rounded-2xl overflow-hidden bg-white border hover:shadow-soft transition" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop" alt="مقاله1" class="h-44 w-full object-cover">
+            <div class="p-5"><a href="#" class="block font-bold hover:text-brand">CMS بومی و امنیت</a><p class="text-sm text-gray-600 mt-2 line-clamp-3">کنترل دسترسی و لاگ.</p></div>
+          </article>
+          <article class="rounded-2xl overflow-hidden bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop" alt="مقاله2" class="h-44 w-full object-cover">
+            <div class="p-5"><a href="#" class="block font-bold hover:text-brand">انتخاب CMS مناسب</a><p class="text-sm text-gray-600 mt-2 line-clamp-3">مقیاس‌پذیری و گردش‌کار.</p></div>
+          </article>
+          <article class="rounded-2xl overflow-hidden bg-white border hover:shadow-soft transition" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" alt="مقاله3" class="h-44 w-full object-cover">
+            <div class="p-5"><a href="#" class="block font-bold hover:text-brand">افزونه‌های مهم محتوا</a><p class="text-sm text-gray-600 mt-2 line-clamp-3">فرم‌ساز و زمان‌بندی.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-16 bg-brand text-white overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8affc?q=80&w=1600&auto=format&fit=crop" alt="" class="absolute inset-0 w-full h-full object-cover opacity-20">
+      <div class="container relative grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-extrabold">ارتقای وب‌سایت سازمانی با CMS بومی</h3>
+          <p class="mt-2 opacity-90">برای دمو و مشاوره تخصصی کلیک کنید.</p>
+        </div>
+        <div class="flex md:justify-end">
+          <a href="#contact" class="px-6 py-3 rounded-xl bg-white text-brand hover:scale-[1.03] shadow-soft">هماهنگی جلسه</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- تماس -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl font-extrabold text-brand">ارتباط با ما</h2>
+          <ul class="mt-6 space-y-2 text-gray-700">
+            <li class="flex items-center gap-2"><i class="ri-phone-line text-xl text-brand"></i> ۰۲۱-۱۲۳۴۵۶۷۸</li>
+            <li class="flex items-center gap-2"><i class="ri-mail-line text-xl text-brand"></i> info@example.com</li>
+            <li class="flex items-center gap-2"><i class="ri-map-pin-line text-xl text-brand"></i> تهران، ...</li>
+          </ul>
+          <div class="mt-6 rounded-2xl overflow-hidden border">
+            <img src="https://images.unsplash.com/photo-1526788542391-74fcb310a932?q=80&w=1600&auto=format&fit=crop" alt="دفتر شرکت" class="w-full h-56 object-cover">
+          </div>
+        </div>
+        <form class="bg-gray-50 p-6 rounded-2xl border" onsubmit="event.preventDefault(); alert('پیام شما ثبت شد ✅');">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="text-sm text-gray-600">نام</label><input required type="text" class="mt-1 w-full p-3 rounded-lg border focus:outline-none ring-brand focus:ring-2" placeholder="نام و نام خانوادگی"></div>
+            <div><label class="text-sm text-gray-600">ایمیل</label><input required type="email" class="mt-1 w-full p-3 rounded-lg border focus:outline-none ring-brand focus:ring-2" placeholder="you@example.com"></div>
+            <div class="sm:col-span-2"><label class="text-sm text-gray-600">موضوع</label><input type="text" class="mt-1 w-full p-3 rounded-lg border focus:outline-none ring-brand focus:ring-2" placeholder="موضوع پیام"></div>
+            <div class="sm:col-span-2"><label class="text-sm text-gray-600">پیام</label><textarea required rows="4" class="mt-1 w-full p-3 rounded-lg border focus:outline-none ring-brand focus:ring-2" placeholder="متن پیام شما"></textarea></div>
+          </div>
+          <button class="mt-4 w-full py-3 rounded-xl bg-brand text-white hover:bg-brandDark">ارسال پیام</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- فوتر (طبق ساختار آرشیو، مدرن شده) -->
+  <footer class="bg-[#0b4e8d] text-white pt-12">
+    <div class="container grid lg:grid-cols-4 gap-10">
+      <div class="col-span-1">
+        <img src="https://dummyimage.com/120x150/ffffff/cccccc.png&text=E-Namad" alt="ای‌نماد" class="h-36 w-auto rounded-xl bg-white/10 p-2" data-keep>
+      </div>
+
+      <div>
+        <div class="font-bold text-white mb-4">ارتباط با ما</div>
+        <ul class="space-y-2 text-sm opacity-90">
+          <li>آدرس: تهران، ... (مثال: بلوار ... ساختمان ...)</li>
+          <li>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</li>
+          <li>ایمیل: info@example.com</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-bold text-white mb-4">دسترسی سریع</div>
+        <ul class="space-y-2 text-sm opacity-90">
+          <li><a href="#clients" class="hover:opacity-100 opacity-90">پرتال سازمانی</a></li>
+          <li><a href="#product" class="hover:opacity-100 opacity-90">سیستم مدیریت محتوا</a></li>
+          <li><a href="#services" class="hover:opacity-100 opacity-90">طراحی سایت</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-bold text-white mb-4">دسترسی سریع</div>
+        <ul class="space-y-2 text-sm opacity-90">
+          <li><a href="#packages" class="hover:opacity-100 opacity-90">ثبت هاست و دامین</a></li>
+          <li><a href="#contact" class="hover:opacity-100 opacity-90">پنل کاربری</a></li>
+          <li><a href="#services" class="hover:opacity-100 opacity-90">ارسال تیکت</a></li>
+          <li><a href="#packages" class="hover:opacity-100 opacity-90">پرداخت آنلاین</a></li>
+          <li><a href="#services" class="hover:opacity-100 opacity-90">توافقنامه سطح خدمات</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container mt-8 grid sm:grid-cols-3 gap-4 text-xs opacity-90">
+      <div class="text-center sm:text-right">آخرین بروزرسانی سایت: ۱۴۰۳/۱۱/۰۶</div>
+      <div class="text-center">بازدیدکنندگان امروز: <span id="visits-today">۲۳۶۴</span></div>
+      <div class="text-center sm:text-left">بازدیدکنندگان این صفحه: <span id="visits-page">۸۸۵۵</span> • کل بازدیدکنندگان: <span id="visits-all">۳۷۶۴۲۰۵</span></div>
+    </div>
+
+    <div class="mt-8 bg-[#093e70]">
+      <div class="container py-4 text-center text-xs">
+        Copyright © <span id="year"></span> — All Rights Reserved • Designed by <b>شرکت طراحی و مهندسی نرم‌افزار</b>
+      </div>
+    </div>
+  </footer>
+
+  <!-- دکمه و پنل دسترس‌پذیری -->
+  <button id="accToggle" class="acc-btn px-4 py-3 rounded-full bg-brand text-white shadow-soft hover:bg-brandDark" aria-label="امکانات دسترس‌پذیری">
+    <i class="ri-accessibility-line text-xl"></i>
+  </button>
+
+  <div id="accPanel" class="acc-panel hidden">
+    <div class="acc-header">
+      <div class="flex items-center gap-2"><i class="ri-accessibility-line"></i><b>تنظیمات دسترس‌پذیری</b></div>
+      <button id="accClose" class="w-8 h-8 grid place-items-center rounded-lg hover:bg-gray-100"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="acc-body text-sm">
+      <div class="mb-4">
+        <div class="font-semibold mb-2">اندازه فونت</div>
+        <div class="flex gap-2">
+          <button data-fs="-10" class="px-3 py-1 rounded-lg border hover:bg-gray-50">کوچکتر</button>
+          <button data-fs="0"  class="px-3 py-1 rounded-lg border hover:bg-gray-50">پیش‌فرض</button>
+          <button data-fs="+10" class="px-3 py-1 rounded-lg border hover:bg-gray-50">بزرگتر</button>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <div class="font-semibold mb-2">فاصله خطوط</div>
+        <label class="inline-flex items-center gap-2"><input id="lhSwitch" type="checkbox" class="sw"><span>افزایش فاصله خطوط</span></label>
+      </div>
+
+      <div class="mb-4 grid grid-cols-2 gap-3">
+        <label class="inline-flex items-center gap-2"><input id="contrastSwitch" type="checkbox" class="sw"><span>کنتراست بالا</span></label>
+        <label class="inline-flex items-center gap-2"><input id="bwSwitch" type="checkbox" class="sw"><span>سیاه و سفید</span></label>
+        <label class="inline-flex items-center gap-2"><input id="imgSwitch" type="checkbox" class="sw"><span>عدم نمایش تصاویر</span></label>
+        <label class="inline-flex items-center gap-2"><input id="linkSwitch" type="checkbox" class="sw"><span>نمایش زیرخط لینک‌ها</span></label>
+      </div>
+
+      <div class="mb-4">
+        <div class="font-semibold mb-2">انتخاب رنگ تم</div>
+        <div class="theme-grid">
+          <button class="theme-dot" data-color="#0664b7" style="background:#0664b7" title="آبی"></button>
+          <button class="theme-dot" data-color="#7d3cff" style="background:#7d3cff" title="بنفش"></button>
+          <button class="theme-dot" data-color="#27ae60" style="background:#27ae60" title="سبز"></button>
+          <button class="theme-dot" data-color="#e74c3c" style="background:#e74c3c" title="قرمز"></button>
+          <button class="theme-dot" data-color="#f1c40f" style="background:#f1c40f" title="زرد"></button>
+        </div>
+      </div>
+
+      <div class="mt-3">
+        <button id="accReset" class="px-3 py-2 rounded-lg border hover:bg-gray-50"><i class="ri-restart-line align-[-2px]"></i> بازنشانی همه</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- اسکریپت‌ها -->
+  <script src="libraries/aos.js"></script>
+  <script src="libraries/swiper-bundle.min.js"></script>
+  <script>
+    // AOS
+    AOS.init({ duration: 750, once: true, offset: 80 });
+
+    // منوی موبایل
+    menuBtn.onclick = () => mobileMenu.classList.toggle('hidden');
+
+    // سال فوتر
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // کانترها
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          const el=e.target.querySelector('.counter'); const target=+e.target.getAttribute('data-counter');
+          let n=0, step=Math.max(1,Math.floor(target/60));
+          const t=setInterval(()=>{ n+=step; if(n>=target){n=target; clearInterval(t)} el.textContent=n },16);
+          io.unobserve(e.target);
+        }
+      })
+    },{threshold:.5});
+    document.querySelectorAll('[data-counter]').forEach(c=>io.observe(c));
+
+    // اسلایدرها
+    new Swiper('.ann-swiper',{slidesPerView:1.1,spaceBetween:16,navigation:{nextEl:'.ann-next',prevEl:'.ann-prev'},breakpoints:{640:{slidesPerView:2.2},1024:{slidesPerView:3.2}}});
+    new Swiper('.clients-swiper',{slidesPerView:2.4,spaceBetween:24,loop:true,autoplay:{delay:1800},breakpoints:{640:{slidesPerView:4.4},1024:{slidesPerView:6.4}}});
+
+    // ===== پنل دسترس‌پذیری =====
+    const $ = s=>document.querySelector(s);
+    const body=document.body, html=document.documentElement;
+    const defaults = { font:100, lh:false, hc:false, bw:false, noimg:false, underline:false, theme:'#0664b7' };
+    const getPrefs = ()=>({ ...defaults, ...(JSON.parse(localStorage.getItem('accPrefs')||'{}')) });
+    const savePrefs = p=>localStorage.setItem('accPrefs',JSON.stringify(p));
+    const applyPrefs = p=>{
+      html.style.fontSize = p.font+'%';
+      body.classList.toggle('lh-boost', !!p.lh);
+      body.classList.toggle('hc', !!p.hc);
+      body.classList.toggle('bw', !!p.bw);
+      body.classList.toggle('no-images', !!p.noimg);
+      body.classList.toggle('underline-links', !!p.underline);
+      // تم پویا
+      document.documentElement.style.setProperty('--brand', p.theme);
+      body.classList.add('use-cssvar');
+      // سوییچ‌ها
+      $('#lhSwitch').checked=!!p.lh;
+      $('#contrastSwitch').checked=!!p.hc;
+      $('#bwSwitch').checked=!!p.bw;
+      $('#imgSwitch').checked=!!p.noimg;
+      $('#linkSwitch').checked=!!p.underline;
+    };
+    let prefs = getPrefs(); applyPrefs(prefs);
+
+    // باز/بسته پنل
+    const panel=$('#accPanel'), btn=$('#accToggle'), close=$('#accClose');
+    btn.onclick = ()=>panel.classList.toggle('hidden');
+    close.onclick = ()=>panel.classList.add('hidden');
+
+    // فونت +/-/reset
+    document.querySelectorAll('[data-fs]').forEach(b=>{
+      b.onclick=()=>{
+        const d=parseInt(b.dataset.fs,10);
+        prefs.font = d===0 ? 100 : Math.min(150, Math.max(80, prefs.font + d));
+        applyPrefs(prefs); savePrefs(prefs);
+      }
+    });
+
+    // سوییچ‌ها
+    $('#lhSwitch').onchange=e=>{ prefs.lh=e.target.checked; applyPrefs(prefs); savePrefs(prefs); };
+    $('#contrastSwitch').onchange=e=>{ prefs.hc=e.target.checked; applyPrefs(prefs); savePrefs(prefs); };
+    $('#bwSwitch').onchange=e=>{ prefs.bw=e.target.checked; applyPrefs(prefs); savePrefs(prefs); };
+    $('#imgSwitch').onchange=e=>{ prefs.noimg=e.target.checked; applyPrefs(prefs); savePrefs(prefs); };
+    $('#linkSwitch').onchange=e=>{ prefs.underline=e.target.checked; applyPrefs(prefs); savePrefs(prefs); };
+
+    // انتخاب رنگ تم
+    document.querySelectorAll('.theme-dot').forEach(t=>{
+      t.onclick=()=>{ prefs.theme=t.dataset.color; applyPrefs(prefs); savePrefs(prefs); }
+    });
+
+    // ریست
+    $('#accReset').onclick=()=>{ prefs={...defaults}; applyPrefs(prefs); savePrefs(prefs); };
+
+  </script>
+
+  <noscript>
+    <div class="container my-6 p-4 bg-yellow-50 border rounded-lg">برای دیدن انیمیشن‌ها JavaScript را فعال کنید.</div>
+  </noscript>
+</body>
+</html>
