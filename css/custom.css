@@ -767,6 +767,10 @@ footer{
 }
 #totop-btn.active {
   bottom: 1rem;
-  -webkit-transform: perspective(200px) rotateX(0) !important;!i;!;
-  transform: perspective(200px) rotateX(0) !important;!i;!;
+  -webkit-transform: perspective(200px) rotateX(0) !important;
+  transform: perspective(200px) rotateX(0) !important;
 }
+.accordion-button::after{
+  margin-left: inherit !important;
+}
+
